@@ -16,6 +16,9 @@ function startGame() {
   }
   confirmHit();
   compareHands();
+  if (confirm("Do you want to play again?")) {
+    startGame();
+  }
 }
 
 // Deals a random number between 2 and 11 inclusive to the dealer.
